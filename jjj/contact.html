@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html> <!--PAGE 2-->
+<head>
+  <title id="title">Contact</title>
+  <style>
+    /* Add a background color and padding to the navigation */
+    nav {
+      background-color: #333333;
+      padding: 10px;
+    }
+
+    /* Style the navigation links */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 5px 10px;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #ffffff;
+      color: #333333;
+    }
+
+    /* Center the content */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: black; /* Set background color to black */
+    }
+
+    /* Style the main content */
+    .container {
+      max-width: 800px;
+      padding: 20px;
+      border: 3px dashed white; /* Add a dashed thick white border */
+      margin-top: 20px; /* Add top margin to separate from image */
+      background-color: rgba(255, 197, 197, 0.9); /* Set background color with transparency */
+    }
+
+    /* Style the headings and paragraphs */
+    h1, p {
+      color: #333333;
+      text-align: center; /* Center the text */
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 20px 0;
+      border: 2px solid red;
+      padding: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    form {
+      text-align: center; /* Center the form */
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: center; /* Center the fieldset */
+    }
+
+    legend {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      text-align: left; /* Align labels to the left */
+    }
+
+    input,
+    textarea {
+      width: 50%; /* Make text boxes half the size */
+      padding: 10px;
+      border: 1px solid #333333;
+      border-radius: 3px;
+      margin: 0 auto; /* Center the text boxes */
+    }
+
+    button[type="submit"] {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #ffffff;
+      color: #f8f8f8;
+    }
+
+    .newsletter-wrapper {
+      display: flex; /* Use flexbox for centering */
+      justify-content: center;
+      align-items: center;
+    }
+
+    .newsletter-wrapper input[type="checkbox"] {
+      margin-right: 5px; /* Add some spacing between checkbox and label */
+    }
+
+    .newsletter-wrapper label {
+      color: #de2424;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 15px;
+      margin-right: 32px;
+      margin-bottom: 15px;
+
+    }
+
+    .newsletter-wrapper input[type="checkbox"]:checked + label {
+      color: green; /* Lighten the label color */
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">The Cause</a></li>
+      <li><a href="about.html">About the Author</a></li>
+      <li><a href="thriving.html">Statistics</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1 id="heading">Contact Us</h1>
+    <p>email, send letter, call, donate, get involved.</p>
+    <form>
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </fieldset>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <div class="newsletter-wrapper">
+        <input type="checkbox" name="subscribe">
+        <label style="margin-left: -30px;">Subscribe to Newsletter</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
