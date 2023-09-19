@@ -1,1 +1,1 @@
-# Humanrights-site just a playful aesthetic test
+# Humanrights-site just a playful aesthetic
