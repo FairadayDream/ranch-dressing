@@ -1,1 +1,1 @@
-# Humanrights-site just a playful aesthetic
+# HumanRights-site just a playful aesthetic
